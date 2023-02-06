@@ -1,0 +1,8 @@
+<form [formGroup]="regForm" class="container alert alert-success m-5">
+    <h3>UpdateProduct</h3>
+    <label for="">productName</label>
+    <input formControlName="namePro" type="text" class="form-control" [value]="nameProduct" (change)="changeProd($event)"placeholder={{array.namePro}}>
+    <label for="">sallary</label>
+    <input formControlName="sallary" type="text"  class="form-control" [value]="detials " (change)="changeDetials($event)"placeholder={{array.salary}}>
+    <button class="btn btn-primary mt-3" (click)="update()">Update</button>
+</form>
